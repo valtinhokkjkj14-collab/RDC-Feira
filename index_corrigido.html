@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <!-- Marca que o JavaScript está ativo (o CSS usa isso para garantir que o texto nunca fique invisível) -->
+  <script>document.documentElement.classList.add('js');</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>República Democrática do Congo | Feira das Nações</title>
+  <!-- [EDITAR] Descrição que aparece em buscadores / compartilhamentos -->
+  <meta name="description" content="Portal de pesquisa sobre a República Democrática do Congo - Feira das Nações.">
+
+  <!-- Fontes (precisam de internet; sem internet o navegador usa fontes padrão elegantes) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Barra de progresso de leitura -->
+  <div class="progresso" id="progresso" aria-hidden="true"></div>
+
+  <!-- ===================== MENU SUPERIOR ===================== -->
+  <header class="topo" id="topo">
+    <nav class="menu container" aria-label="Navegação principal">
+      <a href="#inicio" class="marca">
+        <!-- Mini bandeira (SVG) -->
+        <svg class="mini-bandeira" viewBox="0 0 300 225" aria-hidden="true">
+          <rect width="300" height="225" fill="#007FFF"/>
+          <line x1="0" y1="225" x2="300" y2="0" stroke="#F7D618" stroke-width="64"/>
+          <line x1="0" y1="225" x2="300" y2="0" stroke="#CE1021" stroke-width="40"/>
+          <polygon fill="#F7D618" points="50,17 56.5,36.1 76.6,36.4 60.5,48.4 66.5,67.7 50,56 33.5,67.7 39.5,48.4 23.4,36.4 43.5,36.1"/>
+        </svg>
+        <span>RDC · Feira das Nações</span>
+      </a>
+
+      <button class="menu-botao" id="menuBotao" aria-expanded="false" aria-controls="menuLista" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="menu-lista" id="menuLista">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#conhecendo">Conhecendo</a></li>
+        <li><a href="#geoeconomico">Geoeconômico</a></li>
+        <li><a href="#cultura">Cultura</a></li>
+        <li><a href="#culinaria">Culinária</a></li>
+        <li><a href="#curiosidades">Geopolítica e Meio Ambiente</a></li>
+        <li><a href="#conclusao">Conclusão</a></li>
+        <li><a href="#referencias">Referências</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== SEÇÃO 1 — PÁGINA INICIAL ===================== -->
+    <section class="hero" id="inicio">
+      <!-- [INSERIR FOTOGRAFIA DE DESTAQUE]: a imagem de fundo é definida no style.css, na regra ".hero-fundo" (veja o comentário lá). -->
+      <div class="hero-fundo" aria-hidden="true"></div>
+      <div class="hero-veu" aria-hidden="true"></div>
+
+      <div class="container hero-conteudo">
+        <div class="hero-texto reveal">
+          <p class="etiqueta">Feira das Nações · Pesquisa geográfica e cultural</p>
+          <h1>República Democrática<br>do Congo</h1>
+
+          <!-- [INSERIR FRASE DE APRESENTAÇÃO AQUI] -->
+          <p class="hero-frase">Um país de extraordinária diversidade cultural, riqueza natural e importância para o continente africano.</p>
+
+          <!-- [INSERIR TEXTO AQUI] pequena introdução sobre o país -->
+          <p class="hero-intro">A República Democrática do Congo está localizada na África Central e tem Kinshasa como capital. É um dos maiores países da África, conhecido por sua diversidade cultural, suas vastas florestas tropicais e suas importantes riquezas minerais.</p>
+
+          <a href="#conhecendo" class="botao">Iniciar exploração
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <div class="hero-bandeira reveal">
+          <!-- Bandeira nacional da RDC (SVG) -->
+          <svg viewBox="0 0 300 225" role="img" aria-label="Bandeira da República Democrática do Congo">
+            <rect width="300" height="225" fill="#007FFF"/>
+            <line x1="0" y1="225" x2="300" y2="0" stroke="#F7D618" stroke-width="64"/>
+            <line x1="0" y1="225" x2="300" y2="0" stroke="#CE1021" stroke-width="40"/>
+            <polygon fill="#F7D618" points="50,17 56.5,36.1 76.6,36.4 60.5,48.4 66.5,67.7 50,56 33.5,67.7 39.5,48.4 23.4,36.4 43.5,36.1"/>
+          </svg>
+          <span>Bandeira nacional</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SEÇÃO 2 — CONHECENDO A RDC ===================== -->
+    <section class="secao" id="conhecendo">
+      <div class="container">
+        <header class="secao-titulo reveal">
+          <span class="numero">02</span>
+          <h2>Conhecendo a República Democrática do Congo</h2>
+          <!-- [INSERIR TEXTO AQUI] texto de contextualização do país -->
+          <p class="ph-texto">A República Democrática do Congo (RDC) é um país localizado na África Central, conhecido por sua enorme extensão territorial, diversidade cultural e riqueza natural. É o segundo maior país do continente africano e abriga grande parte da Floresta da Bacia do Congo, uma das regiões de maior biodiversidade do planeta. Sua economia possui importantes recursos minerais, como cobre, cobalto e diamantes, além de grande potencial hidrelétrico. Apesar de suas riquezas naturais, o país enfrenta desafios econômicos, sociais e políticos que influenciam seu desenvolvimento.</p>
+        </header>
+
+        <div class="grade-2">
+          <!-- MAPA -->
+          <figure class="foto reveal">
+            <div class="foto-box proporcao-4-3">
+              <!-- [INSERIR MAPA AQUI]: coloque o arquivo na pasta images e escreva o caminho em src. Ex.: src="images/mapa-politico.jpg" -->
+              <img src="images/RPC.jpg" alt="Danças típicas">
+              <div class="placeholder"><span class="ph-icone">🗺️</span><strong>[INSERIR MAPA AQUI]</strong><small>Mapa político ou físico · images/mapa.jpg</small></div>
+            </div>
+            <figcaption> território da RDC representada com seu território <span class="credito">Fonte/Crédito: veectezy </span></figcaption>
+          </figure>
+
+          <!-- FOTO DA PAISAGEM -->
+          <figure class="foto reveal">
+            <div class="foto-box proporcao-4-3">
+              <!-- [INSERIR FOTOGRAFIA AQUI]: paisagem representativa. Ex.: src="images/paisagem.jpg" -->
+              <img src="images/vulcao.jpg" alt="Danças típicas">
+              <div class="placeholder"><span class="ph-icone">🏞️</span><strong>[INSERIR FOTOGRAFIA AQUI]</strong><small>Paisagem representativa · images/paisagem.jpg</small></div>
+            </div>
+            <figcaption> Paisagem vulcânica do leste do país. <span class="credito">Fonte/Crédito: Montessori </span></figcaption>
+          </figure>
+        </div>
+
+        <!-- Cartões temáticos. Para criar mais, copie um bloco <article class="cartao"> inteiro. -->
+        <div class="grade-3">
+          <article class="cartao reveal">
+            <div class="cartao-icone">📍</div>
+            <h3>Localização geográfica</h3>
+            <!-- [INSERIR TEXTO AQUI] -->
+            <p class="ph-texto">O território congolês é atravessado pela Linha do Equador, o que faz com que o país esteja presente tanto no Hemisfério Norte quanto no Hemisfério Sul. Está inteiramente no Hemisfério Oriental, a leste do Meridiano de Greenwich. Sua capital, Kinshasa, encontra-se na parte oeste do país, às margens do Rio Congo, próximo à fronteira com a República do Congo.</p>
+          </article>
+          <article class="cartao reveal">
+            <div class="cartao-icone">🌍</div>
+            <h3>Localização no continente africano</h3>
+            <!-- [INSERIR TEXTO AQUI] -->
+            <p class="ph-texto">A República Democrática do Congo está localizada na região da África Central, na porção subsaariana do continente africano. É o segundo maior país da África em extensão territorial e ocupa uma posição estratégica na região, fazendo fronteira com nove países. Além disso, possui uma pequena faixa litorânea no Oceano Atlântico, que permite seu acesso ao mar.</p>
+          </article>
+          <article class="cartao reveal">
+            <div class="cartao-icone">📜</div>
+            <h3>Contexto histórico</h3>
+            <!-- [INSERIR TEXTO AQUI] -->
+            <p class="ph-texto">A região foi submetida à colonização belga e ficou conhecida como Congo Belga. Após um período de exploração colonial e movimentos pela autonomia, conquistou sua independência em 30 de junho de 1960. Entre 1971 e 1997, o país recebeu o nome de Zaire, voltando posteriormente à denominação República Democrática do Congo.</p>
+          </article>
+          <article class="cartao reveal">
+            <div class="cartao-icone">📐</div>
+            <h3>Características territoriais</h3>
+            <!-- [INSERIR TEXTO AQUI] -->
+            <p class="ph-texto">Com aproximadamente 2,345 milhões de km², a RDC é o segundo maior país da África em extensão territorial. Seu relevo apresenta uma grande bacia central, extensas planícies, planaltos e regiões montanhosas, especialmente no leste, próximo à fronteira com Uganda e Ruanda.</p>
+          </article>
+          <article class="cartao reveal">
+            <div class="cartao-icone">🌦️</div>
+            <h3>Clima e vegetação</h3>
+            <!-- [INSERIR TEXTO AQUI] -->
+            <p class="ph-texto">O clima predominante é equatorial, caracterizado por temperaturas elevadas, umidade e chuvas frequentes. Nas regiões mais afastadas da Linha do Equador, predominam condições tropicais, com períodos chuvosos e secos. Sua vegetação é marcada por densas florestas tropicais, savanas e áreas alagadas.</p>
+          </article>
+          <article class="cartao reveal">
+            <div class="cartao-icone">⛰️</div>
+            <h3>Principais características naturais</h3>
+            <!-- [INSERIR TEXTO AQUI] -->
+            <p class="ph-texto">A RDC possui uma enorme riqueza natural, destacando-se pelo Rio Congo, pela Floresta da Bacia do Congo e por grandes lagos, como o Tanganica e o Kivu. Seu território também abriga vulcões, montanhas e uma biodiversidade impressionante, com animais como bonobos, gorilas, ocapis e elefantes-da-floresta.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SEÇÃO 3 — QUADRO GEOECONÔMICO ===================== -->
+    <section class="secao secao-clara" id="geoeconomico">
+      <div class="container">
+        <header class="secao-titulo reveal">
+          <span class="numero">03</span>
+          <h2>Quadro Geoeconômico</h2>
+          <!-- [INSERIR TEXTO AQUI] introdução do quadro geoeconômico -->
+          <p>Quando pensamos na República Democrática do Congo, costumamos esbarrar em estereótipos de conflito ou pobreza. Contudo, a RDC é o coração estratégico da transição tecnológica mundial e possui uma dinâmica impressionante quando comparada ao Brasil.</p>
+        </header>
+
+        <!-- Indicadores em destaque: troque o "—" pelo valor e o texto pequeno pela descrição -->
+        <div class="indicadores">
+          <div class="indicador reveal"><span class="indicador-rotulo">Moeda oficial</span><strong class="indicador-valor">Franco Congolês (CDF)</strong><small> 1 Real ≈ 520 Francos Congoleses</small></div>
+          <div class="indicador reveal"><span class="indicador-rotulo">IDH</span><strong class="indicador-valor">0,481 (Baixo)</strong><small>180º no ranking mundial</small></div>
+          <div class="indicador reveal"><span class="indicador-rotulo">População</span><strong class="indicador-valor">~105 milhões</strong><small> 47% vivem em áreas urbanas </small></div>
+          <div class="indicador reveal"><span class="indicador-rotulo">Principais exportações</span><strong class="indicador-valor">Minérios Estratégicos</strong><small>Cobre, Cobalto, Ouro e Diamantes</small></div>
+        </div>
+
+        <div class="grade-2">
+          <article class="bloco-texto reveal">
+            <h3>Indicadores demográficos</h3>
+            <!-- [INSERIR TEXTO AQUI] -->
+            <p>Cerca de 47% da população da RDC vive em áreas urbanas, sendo um país com forte presença rural e de comunidades tradicionais. No Brasil, a taxa de urbanização chega a 87%. A expectativa de vida na República Democrática do Congo é de aproximadamente 60 anos, enquanto no Brasil atinge cerca de 76 anos.</p>
+          </article>
+          <article class="bloco-texto reveal">
+            <h3>Informações econômicas relevantes</h3>
+            <!-- [INSERIR TEXTO AQUI] -->
+            <p>O território da RDC possui 2,34 milhões de km² (sendo o 2º maior país da África), enquanto o Brasil tem 8,51 milhões de km². Ambos compartilham uma riqueza ambiental inestimável: a RDC abriga a Floresta do Congo, a segunda maior floresta tropical do mundo, fazendo par direto com a nossa Floresta Amazônica na regulação climática global.</p>
+          </article>
+        </div>
+
+        <div class="grade-2">
+          <figure class="foto reveal">
+            <div class="foto-box proporcao-4-3">
+              <!-- MAPA: arquivo images/mapacongo.jpg -->
+              <img src="images/mapacongo.jpg" alt="Mapa físico da República Democrática do Congo">
+            </div>
+            <figcaption>Mapa geográfico <span class="credito">Fonte/Crédito:  ONU / Banco Mundial / Cartografia Oficial.</span></figcaption>
+          </figure>
+
+         <div class="grafico-box reveal">
+  <h3>Principais Produtos de Exportação da RDC</h3>
+  <img src="images/fotodomapa.jpg" alt="gráfico relacionado ao tema" style="width:100%;height:auto;border-radius:12px;">
+  <p class="credito">Fonte/Crédito:  ONU / Os autores</p>
+</div>
+</div>
+        <!-- ======= REPÚBLICA DEMOCRÁTICA DO CONGO × BRASIL (geoeconômico) ======= -->
+        <div class="versus reveal">
+          <h3 class="versus-titulo">
+            <span class="versus-pais"><svg viewBox="0 0 300 225" class="mini-bandeira" aria-hidden="true"><rect width="300" height="225" fill="#007FFF"/><line x1="0" y1="225" x2="300" y2="0" stroke="#F7D618" stroke-width="64"/><line x1="0" y1="225" x2="300" y2="0" stroke="#CE1021" stroke-width="40"/><polygon fill="#F7D618" points="50,17 56.5,36.1 76.6,36.4 60.5,48.4 66.5,67.7 50,56 33.5,67.7 39.5,48.4 23.4,36.4 43.5,36.1"/></svg>República Democrática do Congo</span>
+            <span class="versus-x">×</span>
+            <span class="versus-pais">Brasil <span class="emoji-bandeira">🇧🇷</span></span>
+          </h3>
+
+          <!-- Cartões comparativos -->
+          <div class="grade-2">
+            <article class="cartao cartao-rdc">
+              <h4>República Democrática do Congo</h4>
+              <!-- [INSERIR TEXTO AQUI] -->
+              <p class="ph-texto">Gigante da África Central, detentor de grande parte das reservas mundiais de minérios para tecnologia e da segunda maior floresta tropical do planeta, com população estimada em mais de 105 milhões de habitantes.</p>
+            </article>
+            <article class="cartao cartao-br">
+              <h4>Brasil</h4>
+              <!-- [INSERIR TEXTO AQUI] -->
+              <p class="ph-texto">Maior economia da América do Sul, altamente urbanizado (87%), com matriz econômica diversificada entre agronegócio, indústria e mineração, abrigando a maior floresta tropical do mundo (Amazônia).</p>
+            </article>
+          </div>
+
+          <!-- Tabela e gráfico gerados pelo script.js a partir dos dados em COMPARATIVOS.geo -->
+          <div class="comparativo" data-comparativo="geo"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SEÇÃO 4 — IDENTIDADE CULTURAL ===================== -->
+    <section class="secao" id="cultura">
+      <div class="container">
+        <header class="secao-titulo reveal">
+          <span class="numero">04</span>
+          <h2>Identidade Cultural</h2>
+          <!-- [INSERIR TEXTO AQUI] introdução à cultura -->
+          <p class="ph-texto">A República Democrática do Congo possui uma das culturas mais diversas e ricas do continente africano. Sua identidade cultural foi construída ao longo de muitos anos e é formada por diferentes povos, línguas, tradições e costumes. Essa diversidade pode ser percebida nas danças, nas vestimentas tradicionais, nas músicas, nos instrumentos, nas artes visuais e nos festivais realizados em diferentes regiões do país. Além disso, a existência de centenas de grupos étnicos contribui para a variedade de costumes e formas de expressão presentes na sociedade congolesa. Conhecer esses elementos é importante para compreender melhor a história, as tradições e a riqueza cultural da República Democrática do Congo.</p>
+        </header>
+
+        <!--
+          Cada tema cultural abaixo tem: título, texto e fotografia.
+          Os temas se alternam (foto à esquerda/direita) automaticamente.
+          Para VÍDEO: substitua o conteúdo de <div class="video-box"> por um <iframe> copiado do YouTube
+          (Compartilhar > Incorporar) ou use o link <a> logo abaixo.
+        -->
+
+        <!-- 4.1 DANÇAS TÍPICAS -->
+        <article class="tema reveal">
+          <div class="tema-texto">
+            <span class="tema-rotulo">4.1</span>
+            <h3>Danças típicas</h3>
+            <!-- [INSERIR TEXTO AQUI] -->
+            <p class="ph-texto">Rumba congolesa
+É provavelmente a mais famosa. É uma dança acompanhada por música com bastante presença de violão, percussão e canto. Geralmente é dançada em casal e pode aparecer tanto em festas quanto em momentos importantes da comunidade.
+A rumba congolesa tem origem ligada à antiga dança nkumba, palavra relacionada à cintura em kikongo. Em 2021, ela foi reconhecida pela UNESCO como Patrimônio Cultural Imaterial da Humanidade.</p>
+            <a class="link-externo" href="https://youtu.be/_QweIDkUVCo?si=TzXwAJM0CWhlDdaB" data-link-vazio>▶ Link de video</a>
+          </div>
+          <figure class="foto">
+            <div class="foto-box proporcao-4-3">
+              <!-- [INSERIR FOTOGRAFIA AQUI] Ex.: src="images/danca.jpg" -->
+              <img src="images/dancatipica.jpg" alt="Danças típicas">
+              <div class="placeholder"><span class="ph-icone">💃</span><strong>[INSERIR FOTOGRAFIA AQUI]</strong></div>
+            </div>
+            <figcaption>[Legenda] <span class="credito">Crédito: https://ich.unesco.org/en/RL/congolese-rumba-01711
+</span></figcaption>
+          </figure>
+        </article>
+
+        <!-- 4.2 VESTIMENTAS TRADICIONAIS -->
+        <article class="tema reveal">
+          <div class="tema-texto">
+            <span class="tema-rotulo">4.2</span>
+            <h3>Vestimentas tradicionais</h3>
+            <!-- [INSERIR TEXTO AQUI] -->
+            <p class="ph-texto">As vestimentas tradicionais da República Democrática do Congo variam de acordo com cada povo e região. Muitas delas utilizam tecidos coloridos, estampas, fibras naturais, colares, pinturas e outros acessórios. Entre os materiais utilizados tradicionalmente está a fibra de ráfia, que pode ser transformada em tecidos e peças utilizadas em cerimônias e manifestações culturais.</p>
+          </div>
+          <figure class="foto">
+            <div class="foto-box proporcao-4-3">
+              <!-- [INSERIR FOTOGRAFIA AQUI] Ex.: src="images/vestimenta.jpg" -->
+              <img src="images/vesimenta.jpg" alt="vestimentas típicas">
+              <div class="placeholder"><span class="ph-icone">👘</span><strong>[INSERIR FOTOGRAFIA AQUI]</strong></div>
+            </div>
+            <figcaption>[Legenda] <span class="credito">Crédito: https://embassyofdrcongo.com/en/culture </span></figcaption>
+          </figure>
+        </article>
+
+        <!-- 4.3 MÚSICA E INSTRUMENTOS -->
+        <article class="tema reveal">
+          <div class="tema-texto">
+            <span class="tema-rotulo">4.3</span>
+            <h3>Música e instrumentos musicais</h3>
+            <!-- [INSERIR TEXTO AQUI] -->
+            <p class="ph-texto">A música possui grande importância na cultura da República Democrática do Congo. Um dos estilos mais conhecidos é a rumba congolesa, que combina canto, dança e instrumentos musicais. Entre os instrumentos encontrados na cultura congolesa estão tambores, chocalhos, instrumentos de percussão e guitarras. A música está presente em festas, cerimônias e momentos de convivência entre as comunidades.</p>
+            <a class="link-externo" href="https://youtu.be/DsS1rmZtMsY?si=v_mWz7R-csSUUSZv" data-link-vazio>▶ Video relacionado ao assunto</a>
+          </div>
+          <figure class="foto">
+            <div class="foto-box proporcao-4-3">
+              <!-- [INSERIR FOTOGRAFIA AQUI] Ex.: src="images/musica.jpg" -->
+              <img src="images/musica.jpg" alt="Danças típicas">
+              <div class="placeholder"><span class="ph-icone">🥁</span><strong>[INSERIR FOTOGRAFIA AQUI]</strong></div>
+            </div>
+            <figcaption>[Legenda] <span class="credito">Crédito: https://ich.unesco.org/en/RL/congolese-rumba-01711 </span></figcaption>
+          </figure>
+        </article>
+
+        <!-- 4.4 ARTES VISUAIS -->
+        <article class="tema reveal">
+          <div class="tema-texto">
+            <span class="tema-rotulo">4.4</span>
+            <h3>Artes visuais</h3>
+            <!-- [INSERIR TEXTO AQUI] -->
+            <p class="ph-texto">As artes visuais da República Democrática do Congo são marcadas pela produção de máscaras, esculturas, tecidos, cerâmicas e objetos artesanais. Diferentes povos desenvolveram estilos próprios, utilizando materiais encontrados na natureza. As máscaras e esculturas podem ter funções religiosas, sociais e cerimoniais, além de representarem personagens, ancestrais e elementos importantes para cada comunidade.</p>
+          </div>
+          <figure class="foto">
+            <div class="foto-box proporcao-4-3">
+              <!-- [INSERIR FOTOGRAFIA AQUI] Ex.: src="images/artes.jpg" -->
+              <img src="images/artevisu.jpg" alt="Danças típicas">
+              <div class="placeholder"><span class="ph-icone">🎭</span><strong>[INSERIR FOTOGRAFIA AQUI]</strong></div>
+            </div>
+            <figcaption>[Legenda] <span class="credito">Crédito: https://embassyofdrcongo.com/en/culture </span></figcaption>
+          </figure>
+        </article>
+
+        <!-- 4.5 FESTIVAIS E MANIFESTAÇÕES CULTURAIS -->
+        <article class="tema reveal">
+          <div class="tema-texto">
+            <span class="tema-rotulo">4.5</span>
+            <h3>Festivais e manifestações culturais</h3>
+            <!-- [INSERIR TEXTO AQUI] -->
+            <p class="ph-texto">Os festivais e as manifestações culturais da República Democrática do Congo reúnem diferentes formas de expressão, como música, dança, roupas, artes e tradições populares. Esses eventos são importantes para preservar e transmitir os costumes entre as gerações. Em cidades como Kinshasa, festivais de música e arte também ajudam a divulgar a cultura congolesa para outras partes do mundo.</p>
+            <a class="link-externo" href="https://youtu.be/mLVZ3Yyl_ck?si=PjfqQeZcJGMZ1HRm" data-link-vazio>▶Video relacionado ao assunto</a>
+          </div>
+          <figure class="foto">
+            <div class="foto-box proporcao-4-3">
+              <!-- [INSERIR FOTOGRAFIA AQUI] Ex.: src="images/festival.jpg" -->
+              <img src="images/festival.jpg" alt="Danças típicas">
+              <div class="placeholder"><span class="ph-icone">🎉</span><strong>[INSERIR FOTOGRAFIA AQUI]</strong></div>
+            </div>
+            <figcaption>[Legenda] <span class="credito">Crédito: https://www.unesco.org/en/creative-cities/kinshasa </span></figcaption>
+          </figure>
+        </article>
+
+        <!-- 4.6 DIVERSIDADE ÉTNICA E LINGUÍSTICA -->
+        <article class="tema reveal">
+          <div class="tema-texto">
+            <span class="tema-rotulo">4.6</span>
+            <h3>Diversidade étnica e linguística</h3>
+            <!-- [INSERIR TEXTO AQUI] -->
+            <p class="ph-texto">A República Democrática do Congo possui uma grande diversidade étnica e linguística, com mais de 450 grupos étnicos. Entre os principais povos estão os Luba, Mongo, Kongo e Mangbetu-Azande. O francês é a língua oficial do país, enquanto o lingala, suaíli, kikongo e tshiluba são algumas das principais línguas nacionais. Essa diversidade contribui para a riqueza cultural da RDC.</p>
+          </div>
+          <figure class="foto">
+            <div class="foto-box proporcao-4-3">
+              <!-- [INSERIR FOTOGRAFIA AQUI] Ex.: src="images/diversidade.jpg" -->
+              <img src="images/diversidade.jpg" alt="Danças típicas">
+              <div class="placeholder"><span class="ph-icone">🗣️</span><strong>[INSERIR FOTOGRAFIA AQUI]</strong></div>
+            </div>
+            <figcaption>[Legenda] <span class="credito">Crédito: https://www.ambardcbresil.org/culture-et-education </span></figcaption>
+          </figure>
+        </article>
+
+        <!-- VÍDEO DESTAQUE (opcional) -->
+        <div class="video-destaque reveal">
+          <h3>Vídeo cultural em destaque</h3>
+          <div class="video-box">
+            <!-- [INSERIR VÍDEO AQUI]: apague a div "placeholder" e cole aqui o <iframe> do YouTube. Exemplo:
+                 <iframe src="https://www.youtube.com/embed/CODIGO_DO_VIDEO" allowfullscreen></iframe> -->
+           <iframe src="https://www.youtube.com/embed/btHJqzdh6hY"
+          title="Vídeo cultural da República Democrática do Congo"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SEÇÃO 5 — CULINÁRIA ===================== -->
+    <section class="secao secao-clara" id="culinaria">
+      <div class="container">
+        <header class="secao-titulo reveal">
+          <span class="numero">05</span>
+          <h2>Culinária</h2>
+          <!-- [INSERIR TEXTO AQUI] introdução à gastronomia -->
+          <p class="ph-texto">[INSERIR TEXTO AQUI — introdução à gastronomia congolesa]</p>
+        </header>
+
+        <div class="grade-4">
+          <article class="cartao cartao-mini reveal"><h3>Ingredientes utilizados</h3><!-- [INSERIR TEXTO AQUI] --><p class="ph-texto">[INSERIR TEXTO AQUI]</p></article>
+          <article class="cartao cartao-mini reveal"><h3>Temperos característicos</h3><!-- [INSERIR TEXTO AQUI] --><p class="ph-texto">[INSERIR TEXTO AQUI]</p></article>
+          <article class="cartao cartao-mini reveal"><h3>Costumes alimentares</h3><!-- [INSERIR TEXTO AQUI] --><p class="ph-texto">[INSERIR TEXTO AQUI]</p></article>
+          <article class="cartao cartao-mini reveal"><h3>Influências culturais</h3><!-- [INSERIR TEXTO AQUI] --><p class="ph-texto">[INSERIR TEXTO AQUI]</p></article>
+        </div>
+
+        <h3 class="subtitulo reveal">Pratos típicos</h3>
+        <!-- Para adicionar outro prato: copie um bloco <article class="prato"> inteiro e cole abaixo -->
+        <div class="grade-3">
+          <!-- PRATO 1 -->
+          <article class="prato reveal">
+            <div class="foto-box proporcao-4-3">
+              <!-- FOTO: arquivo images/primeiroculinaria.jpg -->
+              <img src="images/primeiroculinaria.jpg" alt="Pondu (Saka-saka)">
+              <div class="placeholder"><span class="ph-icone">🥘</span><strong>[INSERIR FOTOGRAFIA AQUI]</strong></div>
+            </div>
+            <div class="prato-corpo">
+              <h4>Pondu (Saka-saka)</h4>
+              <p class="ph-texto">[INSERIR DESCRIÇÃO AQUI]</p>
+              <p class="prato-rotulo">Ingredientes</p>
+              <ul class="lista-ingredientes">
+                <li>500 g de folhas de mandioca trituradas</li>
+                <li>1 cebola picada</li>
+                <li>2 dentes de alho</li>
+                <li>2 tomates picados</li>
+                <li>3 colheres de óleo de palma (azeite de dendê)</li>
+                <li>200 g de peixe</li>
+                <li>Sal a gosto</li>
+                <li>Água suficiente para o cozimento</li>
+              </ul>
+              <p class="prato-rotulo">Curiosidade</p>
+              <p class="ph-texto">[INSERIR CURIOSIDADE AQUI]</p>
+              <span class="credito">Crédito da foto: [INSERIR]</span>
+            </div>
+          </article>
+          <!-- PRATO 2 -->
+          <article class="prato reveal">
+            <div class="foto-box proporcao-4-3">
+              <img src="images/fotoprato2.jpg" alt="Chikwangue, alimento tradicional feito de mandioca">
+              <div class="placeholder">
+                <span class="ph-icone">🥘</span>
+                <strong>Fotografia da Chikwangue</strong>
+              </div>
+            </div>
+
+            <div class="prato-corpo">
+              <h4>Chikwangue</h4>
+              <p>A chikwangue é um alimento tradicional da República Democrática do Congo, preparado com massa de mandioca fermentada. A massa é embrulhada em folhas de bananeira e cozida, formando um alimento firme, geralmente servido como acompanhamento.</p>
+
+              <p class="prato-rotulo">Ingredientes</p>
+              <ul class="lista-ingredientes">
+                <li>1 kg de massa de mandioca fermentada própria para chikwangue</li>
+                <li>Folhas de bananeira para embrulhar</li>
+                <li>Água, se necessária para ajustar a consistência</li>
+              </ul>
+
+              <p class="prato-rotulo">Curiosidade</p>
+              <p>A chikwangue é consumida em diferentes regiões da África Central e costuma acompanhar preparações de peixe, carne e molhos. As folhas de bananeira ajudam a envolver a massa durante o cozimento.</p>
+
+              <span class="credito">Crédito da foto: [INSERIR]</span>
+            </div>
+          </article>
+
+          <!-- PRATO 3 -->
+          <article class="prato reveal">
+            <div class="foto-box proporcao-4-3">
+              <img src="images/fotoculinariamikate.jpg" alt="Mikate, bolinhos fritos da culinária congolesa">
+              <div class="placeholder">
+                <span class="ph-icone">🥘</span>
+                <strong>Fotografia do Mikate</strong>
+              </div>
+            </div>
+
+            <div class="prato-corpo">
+              <h4>Mikate</h4>
+              <p>O mikate é um bolinho frito popular na República Democrática do Congo. É feito com uma massa fermentada à base de farinha de trigo, água, açúcar e fermento biológico. Depois de crescer, a massa é dividida em pequenas porções e frita até ficar dourada.</p>
+
+              <p class="prato-rotulo">Ingredientes</p>
+              <ul class="lista-ingredientes">
+                <li>500 g de farinha de trigo</li>
+                <li>250 ml de água morna</li>
+                <li>100 g de açúcar</li>
+                <li>10 g de fermento biológico seco</li>
+                <li>1 pitada de sal</li>
+                <li>Óleo para fritar</li>
+              </ul>
+
+              <p class="prato-rotulo">Curiosidade</p>
+              <p>O mikate é encontrado como lanche e comida de rua, especialmente em cidades congolesas. Pode ser consumido no café da manhã ou ao longo do dia.</p>
+
+              <span class="credito">Crédito da foto: [INSERIR]</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SEÇÃO 6 — CURIOSIDADES GEOPOLÍTICAS E AMBIENTAIS ===================== -->
+    <section class="secao" id="curiosidades">
+      <div class="container">
+        <header class="secao-titulo reveal">
+          <span class="numero">06</span>
+          <h2>Curiosidades Geopolíticas e Ambientais</h2>
+          <!-- [INSERIR TEXTO AQUI] -->
+          <p class="ph-texto">A República Democrática do Congo e o Brasil possuem grande importância geopolítica e ambiental por suas riquezas naturais, biodiversidade e recursos estratégicos. Apesar de suas diferenças econômicas e históricas, os dois países enfrentam o desafio de conciliar o desenvolvimento econômico com a preservação ambiental e o uso sustentável de seus recursos.</p>
+        </header>
+
+        <!-- Cartões temáticos (copie um bloco para criar outro) -->
+        <div class="grade-3">
+          <article class="cartao reveal"><div class="cartao-icone">🌐</div><h3>Importância no cenário mundial</h3><!-- [INSERIR TEXTO AQUI] --><p class="ph-texto">A República Democrática do Congo abriga grande parte da Floresta da Bacia do Congo, a segunda maior floresta tropical do mundo. O Brasil abriga a Amazônia. Esses ecossistemas são fundamentais para a biodiversidade, o armazenamento de carbono e o equilíbrio climático mundial.</p></article>
+          <article class="cartao reveal"><div class="cartao-icone">⚡</div><h3>Matriz energética</h3><!-- [INSERIR TEXTO AQUI] --><p class="ph-texto">Em 2023, fontes renováveis representaram 95,9% do consumo final de energia da RDC e 50,2% do brasileiro. Na RDC, esse percentual elevado está relacionado principalmente ao uso de biomassa tradicional, como lenha e carvão vegetal, e não significa que toda a população tenha acesso à eletricidade.</p></article>
+          <article class="cartao reveal"><div class="cartao-icone">🤝</div><h3>Acordos internacionais</h3><!-- [INSERIR TEXTO AQUI] --><p class="ph-texto">Os dois países ratificaram o Acordo de Paris, comprometendo-se com ações de combate às mudanças climáticas. O Brasil também participa da Organização do Tratado de Cooperação Amazônica (OTCA), enquanto a RDC integra iniciativas internacionais voltadas à conservação das florestas da África Central.</p></article>
+          <article class="cartao reveal"><div class="cartao-icone">💡</div><h3>Invenções e acontecimentos históricos</h3><!-- [INSERIR TEXTO AQUI] --><p class="ph-texto">A RDC conquistou sua independência da Bélgica em 30 de junho de 1960. No Brasil, o Programa Nacional do Álcool (Proálcool), criado em 1975, incentivou o uso do etanol como combustível. Em 2003, a introdução dos veículos flex ampliou essa tecnologia.</p></article>
+          <article class="cartao reveal"><div class="cartao-icone">💎</div><h3>Recursos naturais e minerais estratégicos</h3><!-- [INSERIR TEXTO AQUI] --><p class="ph-texto">A RDC é fundamental para o mercado mundial de minerais: em 2024, respondeu por aproximadamente 75% da produção mundial de cobalto. O Brasil, no mesmo ano, foi responsável por cerca de 93% da produção mundial de nióbio. Esses materiais são importantes para a indústria tecnológica e a produção de equipamentos.</p></article>
+          <article class="cartao reveal"><div class="cartao-icone">♻️</div><h3>Questões ambientais</h3><!-- [INSERIR TEXTO AQUI] --><p class="ph-texto">Na RDC, a expansão agrícola, a exploração madeireira, a mineração e a produção de carvão vegetal pressionam as florestas. No Brasil, o desmatamento, as queimadas, a expansão agropecuária e o garimpo ilegal ameaçam a Amazônia e outros biomas.</p></article>
+        </div>
+
+        <!-- Biodiversidade + Floresta da Bacia do Congo (texto + foto) -->
+        <article class="tema reveal">
+          <div class="tema-texto">
+            <span class="tema-rotulo">Natureza</span>
+            <h3>Biodiversidade</h3>
+            <!-- [INSERIR TEXTO AQUI] -->
+            <p class="ph-texto">A República Democrática do Congo possui uma biodiversidade extraordinária. Suas florestas abrigam espécies como gorilas-das-montanhas, bonobos, okapis e elefantes-da-floresta. Muitas dessas espécies enfrentam ameaças relacionadas à perda de habitat, à caça e à exploração descontrolada dos recursos naturais.</p>
+          </div>
+          <figure class="foto">
+            <div class="foto-box proporcao-4-3">
+              <!-- [INSERIR FOTOGRAFIA AQUI] Ex.: src="images/biodiversidade.jpg" -->
+              <img src="images/macaco.jpg" alt="gorila-das-montanhas no Parque Nacional de Virunga.">
+              <div class="placeholder"><span class="ph-icone">🦍</span><strong>[INSERIR FOTOGRAFIA AQUI]</strong></div>
+            </div>
+            <figcaption>Foto: Cai Tjeenk Willink / Wikimedia Commons — CC BY-SA 3.0. <span class="credito">Crédito: https://commons.wikimedia.org/wiki/File:Virunga_Mountain_Gorilla.jpg?utm_source=chatgpt.com</span></figcaption>
+          </figure>
+        </article>
+
+        <article class="tema reveal">
+          <div class="tema-texto">
+            <span class="tema-rotulo">Natureza</span>
+            <h3>Floresta da Bacia do Congo</h3>
+            <!-- [INSERIR TEXTO AQUI] -->
+            <p class="ph-texto">A Floresta da Bacia do Congo está localizada na África Central e é a segunda maior floresta tropical do planeta, atrás apenas da Amazônia. Ela se estende por seis países e possui grande importância ambiental, pois abriga inúmeras espécies, armazena carbono e contribui para a regulação do clima e dos recursos hídricos.</p>
+          </div>
+          <figure class="foto">
+            <div class="foto-box proporcao-4-3">
+              <!-- [INSERIR FOTOGRAFIA AQUI] Ex.: src="images/floresta.jpg" -->
+              <img src="images/florestaestranha.jpg" alt="Rio Lomami, na República Democrática do Congo.">
+              <div class="placeholder"><span class="ph-icone">🌳</span><strong>[INSERIR FOTOGRAFIA AQUI]</strong></div>
+            </div>
+            <figcaption>Christina Bergey <span class="credito">Crédito: Wikimedia Commons — CC BY-SA 3.0.</span></figcaption>
+          </figure>
+        </article>
+
+        <article class="tema reveal">
+          <div class="tema-texto">
+            <span class="tema-rotulo">Natureza</span>
+            <h3>Preservação ambiental e marcos ecológicos</h3>
+            <!-- [INSERIR TEXTO AQUI] -->
+            <p class="ph-texto">A preservação ambiental na RDC depende da criação de áreas protegidas, da fiscalização e da participação das comunidades locais. Um marco histórico foi a criação do Parque Nacional de Virunga, em 1925, considerado o primeiro parque nacional da África. Em 1979, a área foi reconhecida como Patrimônio Mundial pela UNESCO.</p>
+          </div>
+          <figure class="foto">
+            <div class="foto-box proporcao-4-3">
+              <!-- [INSERIR FOTOGRAFIA AQUI] Ex.: src="images/preservacao.jpg" -->
+              <img src="images/rapzjantano.jpg" alt="viveiro de mudas na província de Kivu do Sul, relacionado à prevenção da erosão.">
+              <div class="placeholder"><span class="ph-icone">🌱</span><strong>[INSERIR FOTOGRAFIA AQUI]</strong></div>
+            </div>
+            <figcaption>Bwasomo <span class="credito">Crédito: Wikimedia Commons — CC0 1.0 (domínio público).</span></figcaption>
+          </figure>
+        </article>
+
+        <!-- ======= REPÚBLICA DEMOCRÁTICA DO CONGO × BRASIL (geopolítico e ambiental) ======= -->
+        <div class="versus reveal">
+          <h3 class="versus-titulo">
+            <span class="versus-pais"><svg viewBox="0 0 300 225" class="mini-bandeira" aria-hidden="true"><rect width="300" height="225" fill="#007FFF"/><line x1="0" y1="225" x2="300" y2="0" stroke="#F7D618" stroke-width="64"/><line x1="0" y1="225" x2="300" y2="0" stroke="#CE1021" stroke-width="40"/><polygon fill="#F7D618" points="50,17 56.5,36.1 76.6,36.4 60.5,48.4 66.5,67.7 50,56 33.5,67.7 39.5,48.4 23.4,36.4 43.5,36.1"/></svg>República Democrática do Congo</span>
+            <span class="versus-x">×</span>
+            <span class="versus-pais">Brasil <span class="emoji-bandeira">🇧🇷</span></span>
+          </h3>
+
+          <div class="grade-2">
+            <article class="cartao cartao-rdc">
+              <h4>República Democrática do Congo</h4>
+              <!-- [INSERIR TEXTO AQUI] -->
+              <p class="ph-texto">A RDC possui grande importância estratégica por suas reservas minerais, seu potencial hidrelétrico e sua biodiversidade. O país ocupa uma posição central no mercado internacional de cobalto e abriga parte significativa da Floresta da Bacia do Congo. Entretanto, enfrenta desafios relacionados à infraestrutura, à instabilidade política e à distribuição dos benefícios gerados pela exploração de seus recursos.</p>
+            </article>
+            <article class="cartao cartao-br">
+              <h4>Brasil</h4>
+              <!-- [INSERIR TEXTO AQUI] -->
+              <p class="ph-texto">O Brasil possui grande influência ambiental e econômica por sua biodiversidade, disponibilidade de recursos naturais, produção agropecuária e reservas minerais. A Amazônia tem importância mundial para o equilíbrio climático. Entretanto, o país enfrenta problemas como desmatamento, queimadas, garimpo ilegal e expansão desordenada da fronteira agrícola.</p>
+            </article>
+          </div>
+
+          <!-- Tabela e gráfico gerados pelo script.js a partir dos dados em COMPARATIVOS.geopolitico -->
+          <div class="comparativo" data-comparativo="geopolitico"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SEÇÃO 7 — CONCLUSÃO ===================== -->
+    <section class="secao conclusao" id="conclusao">
+      <div class="container conclusao-conteudo">
+        <header class="secao-titulo reveal">
+          <span class="numero">07</span>
+          <h2>Conclusão</h2>
+        </header>
+        <blockquote class="pergunta reveal">
+          “O que podemos aprender sobre essa região e seus países além dos estereótipos que normalmente conhecemos?”
+        </blockquote>
+        <div class="conclusao-texto reveal">
+          <!-- [INSERIR TEXTO AQUI] sua reflexão final (pode usar vários parágrafos <p>) -->
+          <p class="ph-texto">A República Democrática do Congo nos ensina que um país não pode ser definido apenas por seus problemas. Além dos desafios econômicos, políticos e ambientais, o país possui uma enorme riqueza cultural, com diferentes povos, idiomas, tradições musicais e manifestações artísticas. Sua biodiversidade e seus recursos naturais também demonstram sua grande importância para o mundo.</p>
+          <p class="ph-texto">Ao conhecer melhor o Congo, aprendemos a olhar para a África sem generalizações e estereótipos. Percebemos que, por trás das notícias sobre conflitos e dificuldades, existem sociedades com histórias, conhecimentos e culturas próprias. Portanto, é importante valorizar sua diversidade, compreender seus desafios e reconhecer sua importância histórica, cultural e ambiental.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SEÇÃO 8 — REFERÊNCIAS ===================== -->
+    <section class="secao secao-clara" id="referencias">
+      <div class="container">
+        <header class="secao-titulo reveal">
+          <span class="numero">08</span>
+          <h2>Referências</h2>
+          <p>Fontes utilizadas na pesquisa.</p>
+        </header>
+
+        <!-- Para adicionar outra referência: copie um bloco <li class="referencia"> inteiro.
+             Para o link funcionar, troque href="#" pelo endereço real (ex.: href="https://www.exemplo.org"). -->
+        <ol class="referencias">
+          <li class="referencia reveal">
+            <span class="ref-instituicao">Comunidade da África Oriental (EAC)</span>
+            <span class="ref-titulo">Democratic Republic of the Congo</span>
+            <a href="https://www.eac.int/eac-partner-states/drcongo?utm_source=" target="_blank" rel="noopener" data-link-vazio>link</a>
+          </li>
+          <li class="referencia reveal">
+            <span class="ref-instituicao">Banco Mundial (World Bank Group)</span>
+            <span class="ref-titulo">Climate Risk Country Profile: Congo, Democratic Republic</span>
+            <a href="https://afri-res.uneca.org/sites/default/files/2023-07/15883-wb_congo_democratic_republic_country_profile-web.pdf?utm_source=" target="_blank" rel="noopener" data-link-vazio>Link</a>
+          </li>
+          <li class="referencia reveal">
+            <span class="ref-instituicao">Ministério Federal Alemão para Cooperação Econômica e Desenvolvimento (BMZ)</span>
+            <span class="ref-titulo">Historical Background: Colonial Rule, Dictatorship, Civil War</span>
+            <a href="https://www.bmz.de/en/countries/democratic-republic-of-the-congo/historical-background-56144?utm_source=" target="_blank" rel="noopener" data-link-vazio>link</a>
+          </li>
+          <li class="referencia reveal">
+            <span class="ref-instituicao">Programa das Nações Unidas para o Meio Ambiente (PNUMA/UNEP)</span>
+            <span class="ref-titulo">Biodiversity: Democratic Republic of the Congo</span>
+            <a href="https://countries.unepgrid.ch/democratic-republic-congo/biodiversity?utm_source=" target="_blank" rel="noopener" data-link-vazio>link</a>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer class="rodape">
+    <div class="container rodape-grade">
+      <div>
+        <strong class="rodape-titulo">República Democrática do Congo</strong>
+        <!-- [EDITAR] Nome do projeto -->
+        <p>Feira das Nações · Trabalho escolar de pesquisa</p>
+      </div>
+      <div>
+        <strong class="rodape-titulo">Navegação</strong>
+        <ul>
+          <li><a href="#conhecendo">Conhecendo o país</a></li>
+          <li><a href="#geoeconomico">Quadro geoeconômico</a></li>
+          <li><a href="#cultura">Identidade cultural</a></li>
+          <li><a href="#culinaria">Culinária</a></li>
+        </ul>
+      </div>
+      <div>
+        <strong class="rodape-titulo">&nbsp;</strong>
+        <ul>
+          <li><a href="#curiosidades">Geopolítica e meio ambiente</a></li>
+          <li><a href="#conclusao">Conclusão</a></li>
+          <li><a href="#referencias">Referências</a></li>
+        </ul>
+      </div>
+      <div>
+        <strong class="rodape-titulo">Equipe</strong>
+        <!-- [INSERIR NOMES DOS ALUNOS, TURMA, PROFESSOR(A), ESCOLA E ANO AQUI] -->
+        <p class="ph-texto"> Valter, Carlos, Thiago, Ruan, Daniel, Rafael, Pedro, 2 ano eletrotécnica 807</p>
+      </div>
+    </div>
+    <div class="rodape-faixa"></div>
+  </footer>
+
+  <!-- Botão voltar ao topo -->
+  <button class="voltar-topo" id="voltarTopo" aria-label="Voltar ao topo" title="Voltar ao topo">
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
